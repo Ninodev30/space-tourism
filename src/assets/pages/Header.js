@@ -8,8 +8,6 @@ const Header = () => {
 
     const [modal , setModal] = useContext(Context);
 
-    console.log(modal);
-
     return(
 
         <HeaderContainer>

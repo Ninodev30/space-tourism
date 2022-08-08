@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { Context } from './Context';
+import {Link} from 'react-router-dom';
 import { ModalContainer } from "../styles/ModalStyles";
 import IconClose from '../images/shared/icon-close.svg';
 
 const Modal = () => {
 
-    const [modal, setModal] = useContext(Context);
+    const [modal, setModal , background , setBackground] = useContext(Context);
 
     const hideModal = () => {
         setModal(false);
@@ -34,10 +35,22 @@ const Modal = () => {
 
                     <div>
 
-                        <h2><p>00</p>Home</h2>
-                        <h2><p>01</p>Destination</h2>
-                        <h2><p>02</p>Crew</h2>
-                        <h2><p>03</p>Technology</h2>
+                        <h2 onClick={() => {
+                            setBackground(0);
+                            hideModal();
+                        }}><Link to="/" className="link"><p>00</p>Home</Link></h2>
+                        <h2 onClick={() => {
+                            setBackground(1);
+                            hideModal();
+                        }}><Link to="/Destination" className="link"><p>01</p>Destination</Link></h2>
+                        <h2 onClick={() => {
+                            setBackground(2);
+                            hideModal();
+                        }}><Link to="/Crew" className="link"><p>02</p>Crew</Link></h2>
+                        <h2 onClick={() => {
+                            setBackground(3);
+                            hideModal();
+                        }}><Link to="/Technology" className="link"><p>03</p>Technology</Link></h2>
 
                     </div>
 

@@ -26,8 +26,12 @@ section{
             p{
                 display: inline-block;
                 padding: 0 1rem 2rem 3rem;
-                font-weight: bold;
+                font-weight: bold;            
             }
+        }
+        .link{
+            color:white;
+            text-decoration: none;
         }
     }
 }
