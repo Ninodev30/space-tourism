@@ -1,18 +1,29 @@
 import styled from "styled-components";
+import backgroundHomeMobile from '../../images/home/background-home-mobile.jpg';
+import backgroundHomeTablet from '../../images/home/background-home-tablet.jpg';
+import backgroundHomeDesktop from '../../images/home/background-home-desktop.jpg';
 
 export const HomeContainer = styled.main`
-height:90vh;
+height:100vh;
 width:100vw;
 display: flex;
 align-items: center;
-justify-content: space-evenly;
+justify-content: center;
 flex-direction: column;
-@media(min-width:1024px){
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url(${backgroundHomeMobile});
+@media (min-width:768px) and (max-width:1024px){
+    background-image: url(${backgroundHomeTablet});
+}
+@media (min-width:1024px){
+    background-image: url(${backgroundHomeDesktop});
     flex-direction: row !important;
 }
 article{
     height:45vh;
     width:60vh;
+    margin:8vh 0 3vh 0;
     text-align: center;
     h1{
         font-family: 'Bellefair', serif;
@@ -40,8 +51,8 @@ div{
     align-items: center;
     justify-content: center;
     div{
-        height:15rem;
-        width:15rem;
+        height:13rem;
+        width:13rem;
         background-color: white;
         color: #0b0d17;
         display: flex;
@@ -49,7 +60,7 @@ div{
         justify-content: center;
         border-radius: 50%;
         font-family: 'Bellefair', serif;
-        font-size: 2.2rem;
+        font-size: 1.7rem;
     }
 }
 `
