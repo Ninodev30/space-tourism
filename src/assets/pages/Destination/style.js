@@ -25,10 +25,10 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:8vh;
+    margin-top:12vh;
     img{
         width: 45%;
-        margin:3vh 0;
+        margin:2vh 0;
     }
     h2{
         font-size:1.7rem;
@@ -56,7 +56,7 @@ section{
     }
 }
 article{
-    height: 22vh;
+    height: 21vh;
     width: 100%;
     display: flex;
     flex-direction: column;

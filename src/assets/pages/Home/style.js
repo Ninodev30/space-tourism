@@ -23,7 +23,7 @@ background-image: url(${backgroundHomeMobile});
 article{
     height:45vh;
     width:60vh;
-    margin:8vh 0 3vh 0;
+    margin:12vh 0 4vh 0;
     text-align: center;
     h1{
         font-family: 'Bellefair', serif;

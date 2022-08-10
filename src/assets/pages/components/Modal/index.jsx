@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { Context } from './Context';
+import { Context } from '../../Context';
 import {Link} from 'react-router-dom';
-import { ModalContainer } from "../styles/ModalStyles";
-import IconClose from '../images/shared/icon-close.svg';
+import { ModalContainer } from "./style";
+import IconClose from '../../../images/shared/icon-close.svg';
 
 const Modal = () => {
 

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import {Context} from './Context';
-import { HeaderContainer } from "../styles/HeaderStyles";
-import ImageStar from '../images/shared/logo.svg'
-import ImageMenu from '../images/shared/icon-hamburger.svg';
+import {Context} from '../../Context';
+import { HeaderContainer } from "./style";
+import ImageStar from '../../../images/shared/logo.svg'
+import ImageMenu from '../../../images/shared/icon-hamburger.svg';
 
 const Header = () => {
 

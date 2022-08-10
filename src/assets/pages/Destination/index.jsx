@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { DestinationContainer } from "../../styles/pages/DestinationStyles";
+import { DestinationContainer } from "./style";
 import ImageMoon from '../../images/destination/image-moon.png';
 import ImageMars from '../../images/destination/image-mars.png';
 import ImageEuropa from '../../images/destination/image-europa.png';
@@ -100,7 +100,9 @@ const Destination = () => {
                 <p>{planets[showPlanet].description}</p>
 
             </article>
-<hr></hr>
+
+            <hr></hr>
+
             <article>
 
                 <div>

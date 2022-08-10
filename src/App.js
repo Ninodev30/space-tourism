@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './assets/pages/Header';
-import Modal from './assets/pages/Modal';
-import Home from './assets/pages/Home/Home';
-import Destination from './assets/pages/Destination/Destination';
-import Crew from './assets/pages/Crew/Crew';
-import Technology from './assets/pages/Technology/Technology';
+import Header from './assets/pages/components/Header/index';
+import Modal from './assets/pages/components/Modal/index';
+import Home from './assets/pages/Home/index';
+import Destination from './assets/pages/Destination/index';
+import Crew from './assets/pages/Crew/index';
+import Technology from './assets/pages/Technology/index';
 
 const App = () => {
 
