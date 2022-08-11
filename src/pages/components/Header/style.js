@@ -1,19 +1,46 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-    height:12vh;
+    height:10vh;
     width:100%;
     display:flex;
     align-items: center;
     justify-content: space-between;
     position:absolute;
     padding:0 8%;
-/*     background-color: red; */
     img{
-        width:12%;
+        width:3.5rem;
     }
-    img + img{
-        width:8%;
+    .header-mobile{
+        width:2.5rem;
     }
-
+    nav{
+        display: none;
+    }
+@media(min-width: 768px){
+    padding:0 0 0 8%;
+    .header-mobile{
+        display: none;
+    }
+    nav{
+        background-color: #FFFFFF04;
+        height:9vh;
+        width:59vw;
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+        justify-content: space-evenly;
+        backdrop-filter: blur(10px);
+        .link{
+            text-decoration: none;
+            color: white;
+            h2{
+                font-size: 1.2rem;
+                font-weight:400;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
 `

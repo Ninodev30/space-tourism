@@ -103,7 +103,7 @@ const Destination = () => {
 
             <hr></hr>
 
-            <article>
+            <div className="info-planets">
 
                 <div>
 
@@ -119,7 +119,7 @@ const Destination = () => {
 
                 </div>
 
-            </article>
+            </div>
 
 
         </DestinationContainer>

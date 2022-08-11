@@ -15,12 +15,45 @@ background-repeat: no-repeat;
 background-image: url(${backgroundDestinationMobile});
 @media (min-width:768px) and (max-width:1024px){
     background-image: url(${backgroundDestinationTablet});
+    section{
+        justify-content: space-between !important;
+        h2{
+            align-self: flex-start;
+            padding-left: 4rem;
+        }
+        img{
+            width:30% !important;
+        }
+        .titles{
+            width:45% !important;
+        }
+    }
+    article{
+        height: 18vh !important;
+        margin: 4vh 0 !important;
+        p{
+            padding: 0 10rem !important;
+        }
+    }
+    .info-planets{
+        height:10vh !important; 
+/*         background-color: red; */
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap:15%;
+/*         div{
+            background-color: red !important;
+        } */
+    }
 };
 @media (min-width:1024px){
     background-image: url(${backgroundDestinationDesktop});
     flex-direction: row !important;
 };
 section{
+    height:40vh;
+    width:100%; 
+/*     background-color: red; */
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -63,8 +96,8 @@ article{
     align-items: center;
     justify-content: space-around;
     margin: 2vh 0;
-    h1
-    ,h2{
+/*     background-color: red; */
+    h1{
         font-size: 4rem;
         font-family: "Bellefair" , serif;
         font-weight: 400;
@@ -76,15 +109,26 @@ article{
         padding: 0 5rem;
         text-align: center;
     }
+}
+.info-planets{
+    height: 19vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2vh 0;
     div{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         height:40%;
-        width:60%;
         h2{
             font-size: 2.3rem;
+            font-family: "Bellefair" , serif;
+            font-weight: 400;
+            text-transform: uppercase;
         }
         h3{
             color: #d0d6f9;
