@@ -81,28 +81,24 @@ const Destination = () => {
 
                 <img src={planets[showPlanet].image} alt={"planet"}></img>
 
-                <div className="titles">
-
-                    {titlePlanet(0)}
-                    {titlePlanet(1)}
-                    {titlePlanet(2)}
-                    {titlePlanet(3)}
-
-                </div>
-
-
             </section>
 
             <article>
+
+            <div className="titles">
+
+                {titlePlanet(0)}
+                {titlePlanet(1)}
+                {titlePlanet(2)}
+                {titlePlanet(3)}
+
+            </div>
 
                 <h1>{planets[showPlanet].name}</h1>
 
                 <p>{planets[showPlanet].description}</p>
 
-            </article>
-
-            <hr></hr>
-
+                
             <div className="info-planets">
 
                 <div>
@@ -121,6 +117,7 @@ const Destination = () => {
 
             </div>
 
+            </article>
 
         </DestinationContainer>
 

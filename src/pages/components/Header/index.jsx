@@ -9,6 +9,21 @@ const Header = () => {
 
     const [modal, setModal , background , setBackground] = useContext(Context);
 
+    const subTitle = (value , name) => {
+
+        return(
+
+            <h2 onClick={() => {setBackground(value)}}
+            style={background === value ? {
+                borderBottom: "0.3vh solid white",
+                paddingBottom:"3vh",
+                marginTop:"3.3vh"
+            } : {}}>{name}</h2>
+
+        )
+
+    }
+
     return(
 
         <HeaderContainer>
@@ -22,10 +37,21 @@ const Header = () => {
             
             <nav>
 
-                <Link to="/" className="link"><h2 onClick={() => {setBackground(0)}}>home</h2></Link>
-                <Link to="Destination" className="link"><h2 onClick={() => {setBackground(1)}}>destination</h2></Link>
-                <Link to="Crew" className="link"><h2 onClick={() => {setBackground(2)}}>crew</h2></Link>
-                <Link to="Technology" className="link"><h2 onClick={() => {setBackground(3)}}>technology</h2></Link>
+                <Link to="/" className="link">
+                    {subTitle(0, "home")}
+                </Link>
+
+                <Link to="Destination" className="link">
+                    {subTitle(1, "destination")}
+                </Link>
+
+                <Link to="Crew" className="link">
+                    {subTitle(2, "crew")}
+                </Link>
+
+                <Link to="Technology" className="link">
+                    {subTitle(3, "technology")}   
+                </Link>
 
             </nav>
 

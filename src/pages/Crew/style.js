@@ -10,56 +10,67 @@ display:flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+gap:5vh;
 background-size: cover;
 background-repeat: no-repeat;
 background-image: url(${backgroundCrewMobile});
 @media (min-width:768px) and (max-width:1024px){
     background-image: url(${backgroundCrewTablet});
+    justify-content: flex-end !important;
+    h2{
+        align-self: flex-start;
+        padding-left: 8vw;
+    }
+    figure{
+        order: 1;
+        border: none !important;
+        img{
+            height: 47vh !important;
+        }
+    }
+    article{
+        height:22vh !important;
+        .container-circles{
+            order: 1;
+        }
+        p{
+            padding: 0 20vw !important;
+        }
+    }
 };
 @media (min-width:1024px){
     background-image: url(${backgroundCrewDesktop});
     flex-direction: row !important;
-};
-section{
-    height: 45vh;
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    h2{
-        font-size: 1.7rem;
-        font-weight: 400;
-        letter-spacing: 0.2rem;
-        text-transform: uppercase;
-        p{
-            display: inline-block;
-            padding-right: 1rem;
-            font-weight: bold;
-            opacity: 25%;
-        }
+}
+h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    p{
+        display: inline-block;
+        padding-right: 1rem;
+        font-weight: bold;
+        opacity: 25%;
     }
-    figure{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        img{
-            height:33.5vh;
-        }
-        hr{
-            background-color: #383B4B;
-            opacity:30%;
-            width:85vw;
-        }
+}
+figure{
+    width: 85vw;
+    display:flex;
+    justify-content: center;
+    border-bottom:3px solid #383B4B;
+    img{
+        height:33.5vh;
     }
 }
 article{
-    height: 40vh;
+    height: 33vh;
     width: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap:3vh;
     .container-circles{
         height:1.5rem;
         width:23vw;
@@ -80,12 +91,12 @@ article{
         font-weight: 400;
         font-family: "Bellefair" , serif;
         text-transform: uppercase;
-        padding:0.2rem 0;
     }
     h3{
         font-size:1.5rem;
         opacity: 49.51%;
         text-align: center;
+        padding-bottom:0.4rem;
     }
     p{
         color:#D0D6F9;

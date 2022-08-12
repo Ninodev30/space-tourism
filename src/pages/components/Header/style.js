@@ -30,7 +30,7 @@ export const HeaderContainer = styled.header`
         align-self: flex-start;
         align-items: center;
         justify-content: space-evenly;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         .link{
             text-decoration: none;
             color: white;
@@ -42,5 +42,13 @@ export const HeaderContainer = styled.header`
             }
         }
     }
+}
+@media(min-width: 1024px){
+height:18vh;
+nav{
+    justify-content: center;
+    gap: 8%;
+    align-self:center;
+}
 }
 `

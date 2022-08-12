@@ -15,12 +15,25 @@ background-repeat: no-repeat;
 background-image: url(${backgroundTechnologyMobile});
 @media (min-width:768px) and (max-width:1024px){
     background-image: url(${backgroundTechnologyTablet});
+    section{
+        height:calc(25vh + 20vw) !important;
+        h2{
+            align-self: flex-start !important;
+            padding-left: 7vw;
+        }
+    }
+    article{
+        height:34vh !important;
+        p{
+            padding:0 20vw !important;
+        }
+    }
 };
 @media (min-width:1024px){
     background-image: url(${backgroundTechnologyDesktop});
 };
 section{
-    height:40vh;
+    height:calc(30vh + 15vw) ;
     display:flex;
     flex-direction: column;
     align-items: center;

@@ -23,8 +23,40 @@ background-image: url(${backgroundHomeMobile});
 @media (min-width:1024px){
     background-image: url(${backgroundHomeDesktop});
     flex-direction: row !important;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    article{
+/*         background-color: red; */
+        height:25rem;
+        width:30rem;
+        margin-bottom: 15vh;
+        align-items: flex-start !important;
+        text-align: start !important;
+        .firstParagraph{
+            font-size: 1.6rem !important;
+        }
+        h1{
+            font-size: 8rem !important;
+        }
+        p{
+            font-size:1.2rem !important;
+            padding:0 6rem 0 0!important;
+        }
+    }
+    .container-white-circle{
+        margin-bottom: 20vh;
+        .white-circle{
+            height: 16rem !important;
+            width: 16rem !important;
+            font-size: 2rem !important;
+        }
+    }
 }
 article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     h1{
         font-family: 'Bellefair', serif;
@@ -44,7 +76,7 @@ article{
         letter-spacing: 0.25rem;
     }
 }
-div{
+.white-circle{
     height:13rem;
     width:13rem;
     background-color: white;

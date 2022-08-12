@@ -69,18 +69,14 @@ const Crew = () => {
 
         <CrewContainer>
 
-            <section>
+            <h2><p>02</p>meet your crew</h2>
 
-                <h2><p>02</p>meet your crew</h2>
+            <figure>
 
-                <figure>
+                <img src={crewTeam[crewState].image} alt="crewPerson"></img>
 
-                    <img src={crewTeam[crewState].image} alt="crewPerson"></img>
-                    <hr></hr>
+            </figure>
 
-                </figure>
-
-            </section>
 
             <article>
 

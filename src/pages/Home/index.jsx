@@ -23,7 +23,13 @@ const Home = () => {
 
             </article>
 
-            <div>EXPLORE</div>
+            <div className='container-white-circle'>
+
+                <div className="white-circle">EXPLORE</div>
+
+            </div>
+
+{/*             <div>EXPLORE</div> */}
 
         </HomeContainer>
 

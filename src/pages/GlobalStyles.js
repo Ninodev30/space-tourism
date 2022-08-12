@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     html{
-        font-size:calc(0.4vh + 0.4vw + 7px);
+        font-size:calc(0.4vh + 0.4vw + 6px);
         font-family:'Barlow Condensed', sans-serif;
         color:white;
     }
