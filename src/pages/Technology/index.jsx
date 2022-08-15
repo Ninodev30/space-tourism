@@ -1,17 +1,24 @@
-import React, { useState } from "react";
+import React, { useState , useContext } from "react";
+import { Context } from '../Context';
 import { TechnologyContainer } from "./style";
-import ImageLaunchVehicle from '../../images/technology/image-launch-vehicle-landscape.jpg';
-import ImageSpaceport from '../../images/technology/image-spaceport-landscape.jpg';
-import ImageSpaceCapsule from '../../images/technology/image-space-capsule-landscape.jpg';
+import ImageLaunchVehicleLandscape from '../../images/technology/image-launch-vehicle-landscape.jpg';
+import ImageSpaceportLandscape from '../../images/technology/image-spaceport-landscape.jpg';
+import ImageSpaceCapsuleLandscape from '../../images/technology/image-space-capsule-landscape.jpg';
+import ImageLaunchVehiclePortrait from '../../images/technology/image-launch-vehicle-portrait.jpg';
+import ImageSpaceportPortrait from '../../images/technology/image-spaceport-portrait.jpg';
+import ImageSpaceCapsulePortrait from '../../images/technology/image-space-capsule-portrait.jpg';
 
 const Technology = () => {
 
     const [techState, setTechState] = useState(0);
+    const [modal, setModal , subtitleEffect , setSubtitleEffect] = useContext(Context);
+    setSubtitleEffect(3)
 
     const technologyTypes = [
         {
             technology: "launch vehicle",
-            image: ImageLaunchVehicle,
+            imageLandscape: ImageLaunchVehicleLandscape,
+            imagePortrait: ImageLaunchVehiclePortrait,
             description:
                 `A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
                 payload from Earth's surface to space, usually to Earth orbit or beyond. Our
@@ -20,7 +27,8 @@ const Technology = () => {
         },
         {
             technology: "spaceport",
-            image: ImageSpaceport,
+            imageLandscape: ImageSpaceportLandscape,
+            imagePortrait: ImageSpaceportPortrait,
             description:
                 `A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
                 by analogy to the seaport for ships or airport for aircraft. Based in the
@@ -29,7 +37,8 @@ const Technology = () => {
         },
         {
             technology: "space capsule",
-            image: ImageSpaceCapsule,
+            imageLandscape: ImageSpaceCapsuleLandscape,
+            imagePortrait: ImageSpaceCapsulePortrait,
             description:
                 `A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
                 capsule to reenter the Earth's atmosphere without wings. Our capsule is where
@@ -59,15 +68,12 @@ const Technology = () => {
 
         <TechnologyContainer>
 
+            <h2><p>03</p>space launch 101</h2>
+
             <section>
 
-                <h2><p>03</p>space launch 101</h2>
-
-                <img src={technologyTypes[techState].image} alt="tech"></img>
-
-            </section>
-
-            <article>
+                <img src={technologyTypes[techState].imageLandscape} className="image-landscape" alt="tech"></img>
+                <img src={technologyTypes[techState].imagePortrait} className="image-portrait" alt="tech"></img>
 
                 <div className="container-circles">
 
@@ -77,17 +83,15 @@ const Technology = () => {
 
                 </div>
 
-                <div>
+                <article>
 
                     <h3>the terminology_</h3>
-
                     <h1>{technologyTypes[techState].technology}</h1>
+                    <p>{technologyTypes[techState].description}</p>
 
-                </div>
+                </article>
 
-                <p>{technologyTypes[techState].description}</p>
-
-            </article>
+            </section>
 
         </TechnologyContainer>
 

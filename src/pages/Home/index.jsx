@@ -29,8 +29,6 @@ const Home = () => {
 
             </div>
 
-{/*             <div>EXPLORE</div> */}
-
         </HomeContainer>
 
     )

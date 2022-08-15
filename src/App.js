@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { States } from './pages/Context';
+/* import { States } from './pages/Context'; */
 import Header from './pages/components/Header/index';
 import Modal from './pages/components/Modal/index';
 import Home from './pages/Home/index';
@@ -12,25 +12,21 @@ const App = () => {
 
   return (
 
-    <States>
+    <Router>
 
-      <Router>
+      <Header />
+      <Modal />
 
-        <Header />
-        <Modal />
+      <Routes>
+        
+        <Route path="/" element={<Home />} />
+        <Route path="/Destination" element={<Destination />} />
+        <Route path="/Crew" element={<Crew />} />
+        <Route path="/Technology" element={<Technology />} />
 
-        <Routes>
+      </Routes>
 
-          <Route path="/" element={<Home />} />
-          <Route path="/Destination" element={<Destination />} />
-          <Route path="/Crew" element={<Crew />} />
-          <Route path="/Technology" element={<Technology />} />
-
-        </Routes>
-
-      </Router>
-
-    </States>
+    </Router>
 
   )
 

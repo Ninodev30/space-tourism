@@ -10,66 +10,44 @@ display:flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+gap:5vh;
 background-size: cover;
 background-repeat: no-repeat;
 background-image: url(${backgroundTechnologyMobile});
-@media (min-width:768px) and (max-width:1024px){
-    background-image: url(${backgroundTechnologyTablet});
-    section{
-        height:calc(25vh + 20vw) !important;
-        h2{
-            align-self: flex-start !important;
-            padding-left: 7vw;
-        }
-    }
-    article{
-        height:34vh !important;
-        p{
-            padding:0 20vw !important;
-        }
-    }
-};
-@media (min-width:1024px){
-    background-image: url(${backgroundTechnologyDesktop});
-};
-section{
-    height:calc(30vh + 15vw) ;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    h2{
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 0.2rem;
-        text-transform: uppercase;
-        p{
-            display: inline-block;
-            margin-right: 1rem;
-            font-weight: bold;
-            opacity: 25%;
-        }
-    }
-    img{
-        width: 100%;
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    p{
+        display: inline-block;
+        margin-right: 1rem;
+        font-weight: bold;
+        opacity: 25%;
     }
 }
-article{
-    height: 40vh;
+section{
+    height: 75vh;
     width: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    .image-portrait{
+        display: none;
+    }
+    .image-landscape{
+        width: 100%;
+    }
     .container-circles{
         height: 3.5rem;
-        width: 15rem;
+        width: 13rem;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         div{
             height: 100%;
-            width: 24%;
+            width: 3.5rem;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -77,26 +55,113 @@ article{
             font-family: "Bellefair" , serif;
         }
     }
-    h1,
-    h3{
-        font-size: 2.2rem;
-        font-weight: 400;
-        font-family: "Bellefair" , serif;
-        text-transform: uppercase;
+    article{
+        height:30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        h1,
+        h3{
+            font-weight: 400;
+            font-family: "Bellefair" , serif;
+            text-transform: uppercase;
+        }
+        h1{
+            font-size: 2.2rem;
+            margin-top: -2rem;
+        }
+        h3{
+            color: #D0D6F9;
+            text-align: center;
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+        }
+        p{
+            color: #D0D6F9;
+            text-align: center;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding:0 10vw;        
+        }
     }
-    h3{
-        margin:1vh 0;
-        color: #D0D6F9;
-        text-align: center;
-        font-size: 1rem;
-        letter-spacing: 0.2rem;
+}
+
+/* Tablet design */
+@media (min-width:768px) and (max-width:1024px){
+    background-image: url(${backgroundTechnologyTablet});
+    h2{
+        align-self: flex-start !important;
+        padding: 7vh 0 2vh 7vw;
     }
-    p{
-        color: #D0D6F9;
-        text-align: center;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding:0 10vw;
+    section{
+        height:65vh !important;
+        gap:5vh;
+        .image-landscape{
+            height:35vh;
+        }
+        .container-circles{
+            div{
+                height:4rem !important;
+            }
+        }
+        article{
+            justify-content: space-between !important;
+            gap: 3vh !important;
+            h1{
+                margin-top: -1.5rem;
+            }
+            p{
+                padding:0 20vw !important;
+            }
+        }
+    }
+}
+
+/* Desktop design */
+@media (min-width:1024px){
+    background-image: url(${backgroundTechnologyDesktop});
+    h2{
+        align-self: start;
+        padding: 4rem 0 0 10vw;
+    }
+    section{
+        height:60vh !important;
+        padding-left: 5rem;
+        flex-direction: row !important;
+        .image-landscape{
+            display: none;
+        }
+        .image-portrait{
+            display: block !important;
+            width:35vw;
+            order:1;
+        }
+        .container-circles{
+            height: 18rem !important;
+            flex-direction: column;
+            div{
+                height:5rem !important;
+                width:5rem !important;
+                font-size: 2rem !important;
+            }
+        }
+        article{
+            align-items: flex-start !important;
+            height:35vh !important;
+            padding-left: 5vw;
+            h1{
+                font-size: 3.5rem !important; 
+                margin-top: -1rem;
+            }
+            h3{
+                font-size: 1.2rem !important;
+            }
+            p{
+                text-align: start !important;
+                padding: 0 12rem 0 0 !important;
+            }
+        }
     }
 }
 `

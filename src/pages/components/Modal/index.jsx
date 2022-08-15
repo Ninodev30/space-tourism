@@ -6,7 +6,7 @@ import IconClose from '../../../images/shared/icon-close.svg';
 
 const Modal = () => {
 
-    const [modal, setModal , background , setBackground] = useContext(Context);
+    const [modal, setModal , subtitleEffect , setSubtitleEffect] = useContext(Context);
 
     const hideModal = () => {
         setModal(false);
@@ -36,19 +36,19 @@ const Modal = () => {
                     <div>
 
                         <h2 onClick={() => {
-                            setBackground(0);
+                            setSubtitleEffect(0);
                             hideModal();
                         }}><Link to="/" className="link"><p>00</p>Home</Link></h2>
                         <h2 onClick={() => {
-                            setBackground(1);
+                            setSubtitleEffect(1);
                             hideModal();
                         }}><Link to="/Destination" className="link"><p>01</p>Destination</Link></h2>
                         <h2 onClick={() => {
-                            setBackground(2);
+                            setSubtitleEffect(2);
                             hideModal();
                         }}><Link to="/Crew" className="link"><p>02</p>Crew</Link></h2>
                         <h2 onClick={() => {
-                            setBackground(3);
+                            setSubtitleEffect(3);
                             hideModal();
                         }}><Link to="/Technology" className="link"><p>03</p>Technology</Link></h2>
 

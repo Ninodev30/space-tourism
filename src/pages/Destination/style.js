@@ -91,8 +91,8 @@ section{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top:12vh;
+    justify-content: space-between;
+    margin-top:5vh;
     img{
         width: calc(24vh + 10vw);
         margin:2vh 0;

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { Context } from '../Context';
 import { DestinationContainer } from "./style";
 import ImageMoon from '../../images/destination/image-moon.png';
 import ImageMars from '../../images/destination/image-mars.png';
@@ -8,6 +9,8 @@ import ImageTitan from '../../images/destination/image-titan.png';
 const Destination = () => {
 
     const [showPlanet, setShowPlanet] = useState(0);
+    const [modal, setModal , subtitleEffect , setSubtitleEffect] = useContext(Context);
+    setSubtitleEffect(1)
 
     const planets = [
         {

@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
         font-family:'Barlow Condensed', sans-serif;
         color:white;
     }
+
+    .teste{
+        color:red;
+    }
 `
 
 export default GlobalStyle;

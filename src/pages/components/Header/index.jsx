@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import {Context} from '../../Context';
 import {Link} from 'react-router-dom';
 import { HeaderContainer } from "./style";
@@ -7,14 +7,14 @@ import ImageMenu from '../../../images/shared/icon-hamburger.svg';
 
 const Header = () => {
 
-    const [modal, setModal , background , setBackground] = useContext(Context);
+    const [modal, setModal , subtitleEffect , setSubtitleEffect] = useContext(Context);
 
     const subTitle = (value , name) => {
 
         return(
 
-            <h2 onClick={() => {setBackground(value)}}
-            style={background === value ? {
+            <h2 onClick={() => {setSubtitleEffect(value)}}
+            style={subtitleEffect === value ? {
                 borderBottom: "0.3vh solid white",
                 paddingBottom:"3vh",
                 marginTop:"3.3vh"

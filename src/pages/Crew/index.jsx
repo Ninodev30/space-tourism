@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { Context } from '../Context';
 import { CrewContainer } from "./style";
 import ImageCommander from '../../images/crew/image-douglas-hurley.png'
 import ImageMissionSpecialist from '../../images/crew/image-mark-shuttleworth.png'
@@ -8,6 +9,8 @@ import ImageFlightEngineer from '../../images/crew/image-anousheh-ansari.png'
 const Crew = () => {
 
     const [crewState, setCrewState] = useState(0);
+    const [modal, setModal , subtitleEffect , setSubtitleEffect] = useContext(Context);
+    setSubtitleEffect(2)
 
     const crewTeam = [
         {
@@ -80,6 +83,8 @@ const Crew = () => {
 
             <article>
 
+                <h2><p>02</p>meet your crew</h2>
+
                 <div className="container-circles">
 
                     {circle(0)}
@@ -89,15 +94,15 @@ const Crew = () => {
 
                 </div>
 
-                <div>
+                <div className="crew-info">
 
                     <h3>{crewTeam[crewState].office}</h3>
 
                     <h1>{crewTeam[crewState].name}</h1>
 
-                </div>
+                    <p>{crewTeam[crewState].description}</p>
 
-                <p>{crewTeam[crewState].description}</p>
+                </div>
 
             </article>
 
