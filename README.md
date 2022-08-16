@@ -4,6 +4,7 @@ O projeto consiste em uma aplicação multipage que exibe ao público as princip
 
 Nesse projeto experimentei uma forma diferente de codar , busquei construir cada componente com estados mais orientados a objetos, oque tornou o código muito mas limpo e escalável. Também é um diferencial que ele conta com design para Tablet , sendo assim se tornando adaptativo aos 3 principais tipos de tela. Qualquer crítica será de grande ajuda
 
+
 projeto desenvolvido utilizando as tecnologias:
 
 ✔️React
