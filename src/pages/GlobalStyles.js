@@ -16,8 +16,22 @@ const GlobalStyle = createGlobalStyle`
         color:white;
     }
 
-    .teste{
-        color:red;
+    .background{
+        height:100vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .error{
+        background-color: white;
+        color: black;
+        position: absolute;
+        font-size: 4rem;
     }
 `
 

@@ -1,4 +1,4 @@
-import React, { useState , useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Context } from '../Context';
 import { TechnologyContainer } from "./style";
 import ImageLaunchVehicleLandscape from '../../images/technology/image-launch-vehicle-landscape.jpg';
@@ -11,7 +11,7 @@ import ImageSpaceCapsulePortrait from '../../images/technology/image-space-capsu
 const Technology = () => {
 
     const [techState, setTechState] = useState(0);
-    const [modal, setModal , subtitleEffect , setSubtitleEffect] = useContext(Context);
+    const [modal, setModal, subtitleEffect, setSubtitleEffect] = useContext(Context);
     setSubtitleEffect(3)
 
     const technologyTypes = [
@@ -51,14 +51,15 @@ const Technology = () => {
 
         return (
 
-            <div onClick={() => {setTechState(value)}}
-            style={techState === value ? {
-                color: "#0B0D17" ,
-                backgroundColor: "white"
-            } : {
-                color: "white" ,
-                border: "2px solid #FFFFFF25"
-            }}>{value + 1}</div>
+            <div onClick={() => { setTechState(value) }}
+                style={techState === value ? {
+                    color: "#0B0D17",
+                    backgroundColor: "white"
+                } : {
+                    color: "white",
+                    border: "2px solid #FFFFFF25"
+                }}
+            >{value + 1}</div>
 
         )
 
@@ -66,7 +67,7 @@ const Technology = () => {
 
     return (
 
-        <TechnologyContainer>
+        <TechnologyContainer className='background'>
 
             <h2><p>03</p>space launch 101</h2>
 

@@ -9,7 +9,7 @@ import ImageFlightEngineer from '../../images/crew/image-anousheh-ansari.png'
 const Crew = () => {
 
     const [crewState, setCrewState] = useState(0);
-    const [modal, setModal , subtitleEffect , setSubtitleEffect] = useContext(Context);
+    const [modal, setModal, subtitleEffect, setSubtitleEffect] = useContext(Context);
     setSubtitleEffect(2)
 
     const crewTeam = [
@@ -57,9 +57,9 @@ const Crew = () => {
         return (
 
             <div style={crewState === value ? {
-                opacity: "100%"
+                backgroundColor: "#FFFFFF"
             } : {
-                opacity: "17.44%"
+                backgroundColor: "#FFFFFF17"
             }} onClick={() => {
                 setCrewState(value);
             }}></div>
@@ -70,7 +70,7 @@ const Crew = () => {
 
     return (
 
-        <CrewContainer>
+        <CrewContainer className='background'>
 
             <h2><p>02</p>meet your crew</h2>
 

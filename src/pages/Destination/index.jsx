@@ -62,7 +62,9 @@ const Destination = () => {
 
             <h3 style={showPlanet === value ?
                 {
-                    fontWeight: '700', paddingBottom: "0.75rem", marginTop: "1rem",
+                    fontWeight: '700',
+                    paddingBottom: "0.75rem", 
+                    marginTop: "1rem",
                     borderBottom: "solid white 0.25rem"
                 } : { fontWeight: '400' }}
                 onClick={() => {
@@ -76,7 +78,7 @@ const Destination = () => {
 
     return (
 
-        <DestinationContainer>
+        <DestinationContainer className='background'>
 
             <section>
 

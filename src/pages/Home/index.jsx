@@ -5,7 +5,7 @@ const Home = () => {
 
     return(
 
-        <HomeContainer>
+        <HomeContainer className='background'>
 
             <article>
 

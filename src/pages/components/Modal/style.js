@@ -13,25 +13,25 @@ section{
     float: right;
     img{
         height:2rem;
-        float: right;
         margin:2rem;
+        float: right;
+        cursor: pointer;
     }
     div{
         margin-top: 17.5vh;
-        h2{
-            font-weight: 100;
-            font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        .link{
+            color:white;
+            font-size: 1.7rem;
             letter-spacing: 0.3rem;
+            text-decoration: none;
             text-transform: uppercase;
             p{
                 display: inline-block;
                 padding: 0 1rem 2rem 3rem;
                 font-weight: bold;            
             }
-        }
-        .link{
-            color:white;
-            text-decoration: none;
         }
     }
 }

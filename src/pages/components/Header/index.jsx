@@ -18,7 +18,7 @@ const Header = () => {
                 borderBottom: "0.3vh solid white",
                 paddingBottom:"3vh",
                 marginTop:"3.3vh"
-            } : {}}>{name}</h2>
+            } : {}}><p>0{value}</p>{name}</h2>
 
         )
 

@@ -10,6 +10,7 @@ export const HeaderContainer = styled.header`
     padding:0 8%;
     img{
         width:3.5rem;
+        cursor: pointer;
     }
     .header-mobile{
         width:2.5rem;
@@ -35,10 +36,20 @@ export const HeaderContainer = styled.header`
             text-decoration: none;
             color: white;
             h2{
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight:400;
                 letter-spacing: 0.2rem;
                 text-transform: uppercase;
+                &:hover{
+                    border-bottom: 0.3vh solid #FFFFFF50;
+                    padding-bottom: 3vh;
+                    margin-top: 3.3vh;
+                }
+                p{
+                    display: inline-block;
+                    padding-right: 0.6rem;
+                    font-weight: 700;
+                }
             }
         }
     }

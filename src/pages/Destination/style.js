@@ -4,15 +4,99 @@ import backgroundDestinationTablet from '../../images/destination/background-des
 import backgroundDestinationDesktop from '../../images/destination/background-destination-desktop.jpg'
 
 export const DestinationContainer = styled.main`
-height:100vh;
-width: 100vw;
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-size: cover;
-background-repeat: no-repeat;
 background-image: url(${backgroundDestinationMobile});
+section{
+    height:40vh;
+    width:100%; 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:5vh;
+    img{
+        width: calc(24vh + 10vw);
+        margin:2vh 0;
+    }
+    h2{
+        font-size:1.7rem;
+        letter-spacing: 0.3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        p{
+            display: inline-block;
+            font-weight: bold;
+            opacity: 25%;
+            margin-right: 1rem;
+        }
+    }
+}
+article{
+    height: 45vh;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .titles{
+        height:7%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        h3{
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover{
+                padding-bottom: 0.75rem;
+                margin-top: 1rem;
+                border-bottom: 0.25rem solid #FFFFFF50 ;
+            }
+        }
+    }
+    h1{
+        font-size: 4rem;
+        font-family: "Bellefair" , serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    p{
+        color: #d0d6f9;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .info-planets{
+        height: 17vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 2vh;
+        border-top: .2vh solid #383B4B;
+        margin-top: 2.2vh;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height:40%;
+            h2{
+                font-size: 2.3rem;
+                font-family: "Bellefair" , serif;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            h3{
+                color: #d0d6f9;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+            }
+        }
+    }
+}
 @media (min-width:768px) and (max-width:1024px){
     background-image: url(${backgroundDestinationTablet});
     section{
@@ -85,91 +169,4 @@ background-image: url(${backgroundDestinationMobile});
     }
     }
 }
-section{
-    height:40vh;
-    width:100%; 
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top:5vh;
-    img{
-        width: calc(24vh + 10vw);
-        margin:2vh 0;
-    }
-    h2{
-        font-size:1.7rem;
-        letter-spacing: 0.3rem;
-        font-weight: 400;
-        text-transform: uppercase;
-        p{
-            display: inline-block;
-            font-weight: bold;
-            opacity: 25%;
-            margin-right: 1rem;
-        }
-    }
-}
-article{
-    height: 45vh;
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    .titles{
-        height:7%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        h3{
-            font-size: 1.2rem;
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
-        }
-    }
-    h1{
-        font-size: 4rem;
-        font-family: "Bellefair" , serif;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
-    p{
-        color: #d0d6f9;
-        font-size: 1.4rem;
-        text-align: center;
-    }
-    .info-planets{
-        height: 17vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding-top: 2vh;
-        border-top: .2vh solid #383B4B;
-        margin-top: 2.2vh;
-        div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height:40%;
-            h2{
-                font-size: 2.3rem;
-                font-family: "Bellefair" , serif;
-                font-weight: 400;
-                text-transform: uppercase;
-            }
-            h3{
-                color: #d0d6f9;
-                font-weight: 400;
-                text-transform: uppercase;
-                letter-spacing: 0.2rem;
-            }
-        }
-    }
-}
-
 `

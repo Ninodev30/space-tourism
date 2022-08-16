@@ -12,22 +12,22 @@ const Modal = () => {
         setModal(false);
     }
 
-    window.addEventListener('mouseup', (event) => {
+    const clickOutModal = (event) => {
 
-        const app = document.getElementsByClassName("App")[0];
-        const modalDiv = document.getElementsByClassName("modal-container")[0];
-        
-        if (event.target === modalDiv && event.target.parentNode === app) {
+        const rootContainer = document.getElementById("root");
+        const modalContainer = document.getElementById("modal-container");
+
+        if (event.target === modalContainer && event.target.parentNode === rootContainer) {
             hideModal();
         }
 
-    })
+    }
 
     if (modal === true) {
 
         return (
 
-            <ModalContainer className="modal-container">
+            <ModalContainer id="modal-container" onMouseUp={clickOutModal}>
 
                 <section>
 
@@ -35,22 +35,37 @@ const Modal = () => {
 
                     <div>
 
-                        <h2 onClick={() => {
-                            setSubtitleEffect(0);
-                            hideModal();
-                        }}><Link to="/" className="link"><p>00</p>Home</Link></h2>
-                        <h2 onClick={() => {
-                            setSubtitleEffect(1);
-                            hideModal();
-                        }}><Link to="/Destination" className="link"><p>01</p>Destination</Link></h2>
-                        <h2 onClick={() => {
-                            setSubtitleEffect(2);
-                            hideModal();
-                        }}><Link to="/Crew" className="link"><p>02</p>Crew</Link></h2>
-                        <h2 onClick={() => {
-                            setSubtitleEffect(3);
-                            hideModal();
-                        }}><Link to="/Technology" className="link"><p>03</p>Technology</Link></h2>
+                        <Link to="/" className="link"
+                            onClick={() => {
+                                setSubtitleEffect(0);
+                                hideModal();
+                            }}
+                            ><p>00</p>Home
+                        </Link>
+                            
+                        <Link to="/Destination" className="link"
+                            onClick={() => {
+                                setSubtitleEffect(1);
+                                hideModal();
+                            }}
+                            ><p>01</p>Destination                         
+                        </Link>
+                            
+                        <Link to="/Crew" className="link"
+                            onClick={() => {
+                                setSubtitleEffect(2);
+                                hideModal();
+                            }}
+                            ><p>02</p>Crew
+                        </Link>
+
+                        <Link to="/Technology" className="link"
+                            onClick={() => {
+                                setSubtitleEffect(3);
+                                hideModal();
+                            }}
+                            ><p>03</p>Technology
+                        </Link>
 
                     </div>
 

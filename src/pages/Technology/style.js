@@ -4,15 +4,7 @@ import backgroundTechnologyTablet from '../../images/technology/background-techn
 import backgroundTechnologyDesktop from '../../images/technology/background-technology-desktop.jpg'
 
 export const TechnologyContainer = styled.main`
-height:100vh;
-width: 100vw;
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
 gap:5vh;
-background-size: cover;
-background-repeat: no-repeat;
 background-image: url(${backgroundTechnologyMobile});
 h2{
     font-size: 2rem;
@@ -53,6 +45,10 @@ section{
             align-items: center;
             justify-content: center;
             font-family: "Bellefair" , serif;
+            cursor: pointer;
+            &:hover{
+                border-color: #FFFFFF !important;
+            }
         }
     }
     article{
@@ -87,7 +83,6 @@ section{
     }
 }
 
-/* Tablet design */
 @media (min-width:768px) and (max-width:1024px){
     background-image: url(${backgroundTechnologyTablet});
     h2{
@@ -118,7 +113,6 @@ section{
     }
 }
 
-/* Desktop design */
 @media (min-width:1024px){
     background-image: url(${backgroundTechnologyDesktop});
     h2{
