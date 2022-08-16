@@ -67,7 +67,7 @@ article{
     flex-direction: row !important;
     align-items: flex-end;
     justify-content: space-evenly;
-    padding: 0;
+    padding: 0 !important;
     article{
         height:25rem;
         width:30rem;
