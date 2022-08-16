@@ -27,12 +27,6 @@ const GlobalStyle = createGlobalStyle`
         background-repeat: no-repeat;
     }
 
-    .error{
-        background-color: white;
-        color: black;
-        position: absolute;
-        font-size: 4rem;
-    }
 `
 
 export default GlobalStyle;
