@@ -35,7 +35,7 @@ const Modal = () => {
 
                     <div>
 
-                        <Link to="/space-tourism/" className="link"
+                        <Link to="/" className="link"
                             onClick={() => {
                                 setSubtitleEffect(0);
                                 hideModal();
@@ -43,7 +43,7 @@ const Modal = () => {
                             ><p>00</p>Home
                         </Link>
                             
-                        <Link to="/space-tourism/Destination" className="link"
+                        <Link to="/Destination" className="link"
                             onClick={() => {
                                 setSubtitleEffect(1);
                                 hideModal();
@@ -51,7 +51,7 @@ const Modal = () => {
                             ><p>01</p>Destination                         
                         </Link>
                             
-                        <Link to="/space-tourism/Crew" className="link"
+                        <Link to="/Crew" className="link"
                             onClick={() => {
                                 setSubtitleEffect(2);
                                 hideModal();
@@ -59,7 +59,7 @@ const Modal = () => {
                             ><p>02</p>Crew
                         </Link>
 
-                        <Link to="/space-tourism/Technology" className="link"
+                        <Link to="/Technology" className="link"
                             onClick={() => {
                                 setSubtitleEffect(3);
                                 hideModal();

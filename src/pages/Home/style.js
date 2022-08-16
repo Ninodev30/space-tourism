@@ -65,7 +65,7 @@ article{
 @media (min-width:1024px){
     background-image: url(${backgroundHomeDesktop});
     flex-direction: row !important;
-    align-items: flex-end;
+    align-items: flex-end !important;
     justify-content: space-evenly;
     padding: 0 !important;
     article{

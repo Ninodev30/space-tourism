@@ -37,19 +37,19 @@ const Header = () => {
             
             <nav>
 
-                <Link to="/space-tourism/" className="link">
+                <Link to="/" className="link">
                     {subTitle(0, "home")}
                 </Link>
 
-                <Link to="/space-tourism/Destination" className="link">
+                <Link to="/Destination" className="link">
                     {subTitle(1, "destination")}
                 </Link>
 
-                <Link to="/space-tourism/Crew" className="link">
+                <Link to="/Crew" className="link">
                     {subTitle(2, "crew")}
                 </Link>
 
-                <Link to="/space-tourism/Technology" className="link">
+                <Link to="/Technology" className="link">
                     {subTitle(3, "technology")}   
                 </Link>
 
