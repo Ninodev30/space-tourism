@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Context } from '../../Context';
+import { Context } from '../../Context.jsx';
 import {Link} from 'react-router-dom';
 import { ModalContainer } from "./style";
 import IconClose from '../../../images/shared/icon-close.svg';
@@ -12,23 +12,15 @@ const Modal = () => {
         setModal(false);
     }
 
-    const clickOutModal = (event) => {
-
+    const clickOutModal = (event:any) => {
         const rootContainer = document.getElementById("root");
         const modalContainer = document.getElementById("modal-container");
-
-        if (event.target === modalContainer && event.target.parentNode === rootContainer) {
-            hideModal();
-        }
-
+        if(event.target === modalContainer && event.target.parentNode === rootContainer) hideModal();
     }
 
     if (modal === true) {
-
         return (
-
             <ModalContainer id="modal-container" onMouseUp={clickOutModal}>
-
                 <section>
 
                     <img onClick={hideModal} src={IconClose} alt="X"></img>
@@ -70,11 +62,8 @@ const Modal = () => {
                     </div>
 
                 </section>
-
             </ModalContainer>
-
         )
-
     }
 
 }

@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {Context} from '../../Context';
+import {Context} from '../../Context.jsx';
 import {Link} from 'react-router-dom';
 import { HeaderContainer } from "./style";
 import ImageStar from '../../../images/shared/logo.svg'
@@ -9,7 +9,7 @@ const Header = () => {
 
     const [modal, setModal , subtitleEffect , setSubtitleEffect] = useContext(Context);
 
-    const subTitle = (value , name) => {
+    const subTitle = (value:number, name:string) => {
 
         return(
 

@@ -7,11 +7,9 @@ export const States = (props) => {
     const [subtitleEffect , setSubtitleEffect] = useState(0);
 
     return(
-
         <Context.Provider value={[modal , setModal , subtitleEffect, setSubtitleEffect]}>
             {props.children}
         </Context.Provider>
-
     )
 
 }

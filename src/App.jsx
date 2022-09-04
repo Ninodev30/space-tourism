@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { States } from './pages/Context';
+import { States } from './pages/Context.jsx';
 import Header from './pages/components/Header/index';
 import Modal from './pages/components/Modal/index';
 import Home from './pages/Home/index';

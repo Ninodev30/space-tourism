@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Context } from '../Context';
+import { Context } from '../Context.jsx';
 import { DestinationContainer } from "./style";
 import ImageMoon from '../../images/destination/image-moon.png';
 import ImageMars from '../../images/destination/image-mars.png';
@@ -56,7 +56,7 @@ const Destination = () => {
         }
     ]
 
-    const titlePlanet = (value) => {
+    const titlePlanet = (value:number) => {
 
         return (
 

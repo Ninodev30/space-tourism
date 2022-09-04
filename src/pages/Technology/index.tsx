@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Context } from '../Context';
+import { Context } from '../Context.jsx';
 import { TechnologyContainer } from "./style";
 import ImageLaunchVehicleLandscape from '../../images/technology/image-launch-vehicle-landscape.jpg';
 import ImageSpaceportLandscape from '../../images/technology/image-spaceport-landscape.jpg';
@@ -47,7 +47,7 @@ const Technology = () => {
         }
     ]
 
-    const circle = (value) => {
+    const circle = (value:number) => {
 
         return (
 
