@@ -11,10 +11,10 @@ projeto desenvolvido utilizando as tecnologias:
 
 ✔️React Hooks
 
+✔️TypeScript
+
 ✔️Router
 
 ✔️Context API
 
 ✔️Styled-components
-
-✔️Media-queries
